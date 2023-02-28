@@ -92,7 +92,7 @@ def main():
     parser = argparse.ArgumentParser(
             description='Apply chem equation to IS reflectance')
     parser.add_argument('-bright_min','--bright_min',default=1.50,type=float,
-            help="Minimum brightness (sum refl) considered, default 1.5")
+            help="Minimum brightness (refl vector norm) considered, default 1.5")
     parser.add_argument('-bright_max','--bright_max',default=9.90,type=float,
             help="Maximum brightness considered, default 9.9")
     parser.add_argument('-ndvi_min','--ndvi_min',default=0.7,type=float,
