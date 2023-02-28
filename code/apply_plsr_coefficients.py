@@ -89,7 +89,8 @@ def get_ndvi_bands(wl):
     return redband, nirband
 
 def main():
-    parser = argparse.ArgumentParser(description='Apply chem equation to BIL')
+    parser = argparse.ArgumentParser(
+            description='Apply chem equation to IS reflectance')
     parser.add_argument('-bright_min','--bright_min',default=1.50,type=float,
             help="Minimum brightness (sum refl) considered, default 1.5")
     parser.add_argument('-bright_max','--bright_max',default=9.90,type=float,
