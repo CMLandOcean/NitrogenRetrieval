@@ -45,8 +45,9 @@ from tqdm import tqdm
 ##Read in baseline wavelength and fwhm info
 ###########################################
 WL_ORIG = FWHM_ORIG = None
+dbpath = os.path.join(os.path.dirname(__file__),"gao_2022_wl_fwhm.csv")
 try:
-    wldat = pd.read_csv("gao_2022_wl_fwhm.csv")
+    wldat = pd.read_csv(dbpath)
     WL_ORIG = wldat['wl'].to_numpy()
     FWHM_ORIG = wldat['fwhm'].to_numpy()
 except Exception as exc:
