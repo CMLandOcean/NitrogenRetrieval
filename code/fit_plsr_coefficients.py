@@ -20,9 +20,13 @@
 #   Phillip Brodrick, phil.brodrick AT gmail.com
 #   Dana Chadwick, dana.chadwick AT jpl.nasa.gov
 #
-# ...reimplementing R code from the autoplsr R package described in:
-#   Schmidtlein, S., H. Feilhauer, and H. Bruelheide. 2012. Mapping plant
-#    strategy types using remote sensing. Jour. of Veg. Sci. 23:395–405.
+# ...for the purpose of running the PLSR methodology in:
+#   Chadwick, K. D., and Asner, G. P., 2016. Organismic-Scale Remote Sensing of 
+#    Canopy Foliar Traits in Lowland Tropical Forests. Rem. Sens. 8:87.
+
+# ...and reimplementing R code from the autoplsr R package described in:
+#   Schmidtlein, S., H. Feilhauer, and H. Bruelheide. 2012. Mapping Plant
+#    Strategy Types Using Remote Sensing. Jour. of Veg. Sci. 23:395–405.
 #	 
 # Modified by:
 #   Nicholas Vaughn, nickvaughn AT asu.edu
@@ -72,7 +76,7 @@ from collections import OrderedDict
 #                         in sequential order. Columns names can have a preface,
 #                         e.g. B001, B002 ..., which can be removed to get a band
 #                         index as an integer.
-# band preface          : What preceeds numbers in the band columns - usually "B"
+# band preface          : What precedes numbers in the band columns - usually "B"
 # chems                 : List of chems to fit, e.g. ["LMA"]
 # chem transforms       : Matching list of transforms "log", "sqrt", "square", 
 #                         "inverse" or "none" - like ["none"]
@@ -99,17 +103,16 @@ from collections import OrderedDict
 #                         (except that specified in "test set holdout"). Use -1
 #                         to use jackknife mode, i.e. if negative value in
 #                         "iteration holdout"
-# iteration holdout     : Fraction of data used for validation at each iteraton -
+# iteration holdout     : Fraction of data used for validation at each iteration -
 #                         can be 0 for no validation set, use negative values
 #                         (i.e. -n) to use jackknife mode, where n clusters are
 #                         held out each time, and each iteration is mutually
 #                         exclusive.
 # test set holdout      : Fraction of data used for global holdout test set - can
-#                         be 0 for no global holdout set, ignored in jackkife
+#                         be 0 for no global holdout set, ignored in jackknife
 #                         mode
 # samples per cluster   : Specify a number of samples per cluster for training 
 #                         data, use -1 for no limit
-# min pixel per cluster : Mimimum number of samples per cluster
 # max components        : Maximum number of components checked with press stat
 # use degen removal     : true/false use procedure to find and remove degenerate
 #                         (less significant) input features. Similar to the A4 
