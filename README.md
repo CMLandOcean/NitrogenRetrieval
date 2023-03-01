@@ -77,3 +77,4 @@ Parameter | Description
 `n jobs` | Number of parallel jobs run by `sklearn` functions
 `random seed` | Seed value for random number generator for reproducible results (-1 for random seed)
 
+Example configuration files for the bootstrap and jackknife modes used in the fitting of coefficients in the ATBD report can be found in the `config` folder of this repository.
