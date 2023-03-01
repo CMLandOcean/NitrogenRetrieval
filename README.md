@@ -23,12 +23,12 @@ Argument   | Description
 #### Optional arguments are: 
 Argument   | Description
 ---------- | ------------------------------
-`-h, --help` | ENVI-formatted reflectance map
+`-h, --help` | Print help message
 `-bright_min, -bright_max` | Thresholds on brightness (vector norm of bands with non-zero PLSR coefficients) to remove input spectra from consideration. Default `1.5` and `9.9`, specify `-1` to remove.
 `-rescale` | If input reflectance is not scaled 0-1, then default brightness thresholds will not work. This value will be multiplied by input reflectance values.
-`-ndvi_min` | Threshold of NDVI to remove spectra from consideration. Default is `0.7`, specify `-1` to remove.
-`-nodata` | Output map will have this value representing “no data”. Defaults to `-9999`.
-`-format` | GDAL-recognizable shortname for output data format. Defaults to `“GTiff”`
+`-ndvi_min` | Threshold of NDVI to remove spectra from consideration - defaults is `0.7`, specify `-1` to remove.
+`-nodata` | Output map will have this value representing “no data” - defaults to `-9999`.
+`-format` | GDAL-recognizable shortname for output data format - defaults to `“GTiff”`.
 `-co` | GDAL-recognized creation options for the specified data format.
 
 Note that a wavelength/fwhm database (`gao_2022_wl_fwhm.csv`) is included in the code folder and must be located in the same folder as the apply_plsr_coefficients.py script in order for the script to work.
