@@ -1,0 +1,27 @@
+{
+    "csv file" : "nitrogen_training_data.csv",
+    "band preface" : "B",
+    "chems" : ["N"],
+    "chem transforms" : ["none"],
+    "cluster col" : "none",
+    "bad bands" : [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,420,421,422,423,424,425,426,427,428
+],
+    "ignore columns" : ["No", "ID", "State", "Crop", "FT", "NDVI"],
+    "brightness normalize" : true,
+    "ndvi maximum" : -1,
+    "ndvi minimum" : -1,
+    "ndvi red band" : 61,
+    "ndvi nir band" : 103,
+    "brightness maximum" : -1,
+    "brightness minimum" : -1,
+    "test set holdout" : 0.0,
+    "iterations" : -1,
+    "iteration holdout" : -1,
+    "samples per cluster" : -1,
+    "max components" : 25,
+    "use degen removal" : false,
+    "find bad bands" : true,
+    "scale features" : false,
+    "n jobs" : 2,
+    "random seed" : -1
+}
