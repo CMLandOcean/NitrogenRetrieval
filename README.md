@@ -64,7 +64,7 @@ Parameter | Description
 `ndvi minimum` | Minimum NDVI value, `-1` for no limit
 `ndvi maximum` | Minimum NDVI value, `-1` for no limit
 `ndvi red band` | Band representing red for NDVI computation, e.g. `34`
-`ndvi nir band` | Band representing red for NDVI computation, e.g. `46`
+`ndvi nir band` | Band representing nir for NDVI computation, e.g. `46`
 `brightness maximum` | Maximum NDVI value, `-1` for no limit
 `brightness minimum` | Minimum NDVI value, `-1` for no limit
 `iterations` | Number of iterations of the algorithm - for each iteration, the fraction of clusters specified in "iteration holdout" will be used to make a test set and the model will be fit on the rest of the data (except that specified in `test set holdout`). Use `-1` to use jackknife mode, i.e. if negative value in `iteration holdout`
