@@ -23,9 +23,10 @@
 #   Nicholas Vaughn, nickvaughn AT asu.edu
 #
 # PLSR-Press
-# This methodology was developed in this current form by former and current
-# members of the Asner Lab at GDCS. Please give proper attribution when using
-# this code for public:
+# Code is provided to Planet, PBC as part of the CarbonMapper Land and Ocean
+# Program. This methodology was developed in this current form by former and
+# current members of the Asner Lab at GDCS. Please give proper attribution
+# when using this code for publication:
 #
 #  Martin, R. E., K. D. Chadwick, P. G. Brodrick, L. Carranza-Jimenez,
 #    N. R. Vaughn, and G. P. Asner. 2018. An Approach for Foliar Trait
