@@ -1,0 +1,14 @@
+plsr-version: 1.1.1
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Brodrick 
+    given-names: Phillip 
+    orcid: 
+  - family-names:  Vaughn 
+    given-names: Nicholas
+    orcid: 
+title: "PLSR-PRESS"
+version: 1.1.1
+doi: 10.5281/zenodo.7916342
+date-released: 2023-05-09
+url: "https://github.com/CMLandOcean/NitrogenRetrieval"
