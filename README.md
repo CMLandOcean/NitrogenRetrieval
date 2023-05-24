@@ -1,4 +1,6 @@
 # NitrogenRetrieval - 
+[![DOI](https://zenodo.org/badge/607442277.svg)](https://zenodo.org/badge/latestdoi/607442277)
+
 Code and coefficients for retrieving Nitrogen content from Tanager reflectance data over agricultural vegetation landscapes.
 
 There are two subfolders: `code` and `coefficients`. The `code` folder contains two python scripts, one to fit and rebuild PLSR coefficients (`fit_plsr_coefficients.py`) and one to apply coefficients to a reflectance map (`apply_plsr_coefficients.py`).  The `coefficients` folder contains a CSV database of the coefficients from the fit of PLSR to GAO reflectance data described in this report.
